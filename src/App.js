@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import GetLatestBlock from './GetLatestBlock'
 import Authenticate from './Authenticate'
+import SignUserMassage from './SignUserMassage'
 import SendTransaction from './SendTransaction'
 
 const Wrapper = styled.div`
@@ -15,6 +16,7 @@ function App() {
     <Wrapper>
       <GetLatestBlock />
       <Authenticate />
+      <SignUserMassage />
       <SendTransaction />
     </Wrapper>
   );
