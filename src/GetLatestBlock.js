@@ -24,7 +24,7 @@ const GetLatestBlock = () => {
     event.preventDefault()
 
     const response = await fcl.send([
-      fcl.getLatestBlock(),
+      fcl.getBlock(true),
     ])
     
     setData(await fcl.decode(response))

@@ -41,7 +41,7 @@ const SendTransaction = () => {
     setStatus("Resolving...")
 
     const blockResponse = await fcl.send([
-      fcl.getLatestBlock(),
+      fcl.getBlock(true),
     ])
 
     const block = await fcl.decode(blockResponse)
